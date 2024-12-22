@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Feedback Form</h2>
+      <form id="feedbackForm">
+        <div>
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+          <div id="nameError" class="error"></div>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+          <div id="emailError" class="error"></div>
+        </div>
+
+        <div>
+          <label>Rating</label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="1" /> 1
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="2" /> 2
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="3" /> 3
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="4" /> 4
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="5" /> 5
+          </label>
+          <div id="ratingError" class="error"></div>
+        </div>
+
+        <div>
+          <label for="comments">Your Comments</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Write your feedback here..."
+          ></textarea>
+          <div id="commentsError" class="error"></div>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+    <script>
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let isValid = true;
+          // Clear previous errors
+          document.getElementById("nameError").textContent = "";
+          document.getElementById("emailError").textContent = "";
+          document.getElementById("ratingError").textContent = "";
+          document.getElementById("commentsError").textContent = "";
+
+          // Validate Name
+          const name = document.getElementById("name").value.trim();
+          if (name === "") {
+            document.getElementById("nameError").textContent =
+              "Name is required.";
+            isValid = false;
+          }
+
+          // Validate Email
+          const email = document.getElementById("email").value.trim();
+          const emailPattern =
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          if (!email.match(emailPattern)) {
+            document.getElementById("emailError").textContent =
+              "Please enter a valid email address.";
+            isValid = false;
+          }
+
+          // Validate Rating
+          const rating = document.querySelector('input[name="rating"]:checked');
+          if (!rating) {
+            document.getElementById("ratingError").textContent =
+              "Please select a rating.";
+            isValid = false;
+          }
+
+          // Validate Comments
+          const comments = document.getElementById("comments").value.trim();
+          if (comments === "") {
+            document.getElementById("commentsError").textContent =
+              "Comments are required.";
+            isValid = false;
+          }
+
+          // If all validations pass
+          if (isValid) {
+            alert("Thank you for your feedback!");
+            // Optionally, send the form data to a server or process it further
+          }
+        });
+    </script>
+  </body>
+</html>

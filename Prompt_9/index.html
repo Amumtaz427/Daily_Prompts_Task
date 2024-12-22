@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt_9</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="left">
+      <video autoplay muted loop>
+        <source src="/7791927-hd_1920_1080_25fps.mp4" type="video/mp4" />
+      </video>
+      <div class="taxt">
+        <h1>
+          Here are some <span>quotes</span> and messages <br />you can use to
+          <span>celebrate </span>a company anniversary
+        </h1>
+      </div>
+      <div class="maincard">
+        <div class="cerd1">
+            <h4>Office</h4>
+        </div>
+        <div class="cerd2">
+            <h4>Office</h4>
+        </div>
+        <div class="cerd3">
+            <h4>Office</h4>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <header>
+        <h1>Tech Conference 2024</h1>
+        <h2>Innovating Tomorrow, Today</h2>
+      </header>
+
+      <section class="hero">
+        <p style="font-size: 1px; color: #11ff45; margin-top: 2px">
+          Join industry leaders and innovators for the biggest tech event of the
+          year!
+        </p>
+      </section>
+      <div class="formr">
+        <div class="form-container">
+          <h3>Register Now</h3>
+          <form id="registrationForm">
+            <div>
+              <label class="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                required
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email address"
+              />
+            </div>
+
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Enter your phone number"
+              />
+            </div>
+
+            <div>
+              <label for="company">Company Name</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                required
+                placeholder="Enter your company name"
+              />
+            </div>
+
+            <div>
+              <label for="message">Why are you attending?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="2"
+                placeholder="Let us know why you're excited about this event"
+              ></textarea>
+            </div>
+
+            <button type="submit">Register</button>
+          </form>
+          <footer>
+            <p>
+              &copy; 2024 Tech Conference. All rights reserved.
+              <a href="#">Privacy Policy</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Form submission handling (example)
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Here you can handle form submission, e.g., save to a database or send an email.
+          alert("Thank you for registering for the Tech Conference 2024!");
+        });
+    </script>
+  </body>
+</html>
