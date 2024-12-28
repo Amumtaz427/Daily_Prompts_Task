@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > h1 {
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+.about {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(https://plus.unsplash.com/premium_photo-1677533644207-a88a9cfc0428?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 20%;
+}
+.about > .circle {
+  margin-top: -3%;
+  width: 13vw;
+  height: 30vh;
+  border-radius: 50%;
+  background-image: url(https://images.unsplash.com/photo-1628359355624-855775b5c9c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.circle > p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.about > .about1 {
+  color: white;
+}
+.gallery {
+  /* background-color: yellow; */
+  background-image: url(https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 99;
+  width: 100vw;
+  height: 120vh;
+  color: white;
+}
+.gallery-container {
+  display: grid;
+  width: 90vw;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  color: black;
+}
+
+.gallery-item {
+  border-radius: 3%;
+  width: 20vw;
+  height: 30vh;
+  background-color: tomato;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-item img {
+  width: 20vw;
+  height: 30vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.contact {
+    background-color: yellowgreen;
+}
