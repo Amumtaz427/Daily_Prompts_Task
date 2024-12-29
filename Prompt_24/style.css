@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  background-color: #5a5a5a;
+  color: white;
+  padding: 6px 0;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+}
+#hero > .left {
+  margin-left: 5%;
+  width: 50vw;
+  height: 55vh;
+  background-image: url(https://bd.gaadicdn.com/processedimages/royal-enfield/roadster-650/494X300/roadster-650636a8922b9fef.jpg?imwidth=400&impolicy=resize);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.left .overlay {
+  /* margin-left: 5%; */
+  width: 50vw;
+  height: 55vh;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.left .overlay > h2 {
+  padding-top: 30%;
+  font-size: 1.2rem;
+}
+.overlay > p {
+  font-size: 0.8rem;
+}
+#hero > .right {
+  margin-right: 5%;
+  width: 50vw;
+  height: 55vh;
+  /* background-color: rgb(206, 106, 24); */
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+.right .up {
+  width: 35vw;
+  height: 30vh;
+  background-image: url(motorcycle-landing.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.right .up p {
+  font-size: 1rem;
+}
+.right .lb {
+  width: 35vw;
+  height: 30vh;
+  background-image: url(goan-classic-350-motorcycle-new.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
+  width: 100vw;
+  display: flex;
+  gap: 10px;
+  background-color: #5a5a5a;
+}
+section {
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 40px;
+  width: 90vw;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card #philosophy {
+  background-image: url(shotgun-650-motorcycle-listing.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.card #mission {
+  background-image: url(guerrilla_450_motorcycle.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.card #values {
+  background-image: url(hunter-350-motorcycle-landing.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#values > p {
+  margin-top: 20px;
+  font-size: 0.2rem;
+  line-height: 1.6;
+  color: aliceblue;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
