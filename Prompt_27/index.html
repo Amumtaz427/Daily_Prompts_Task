@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">CreativeEdge</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm Alex Smith</h1>
+        <p class="hero-subtitle">
+          A passionate Graphic Designer creating visual magic.
+        </p>
+        <a href="#portfolio" class="hero-btn">View Portfolio</a>
+      </div>
+      <div class="hero-image">
+        <section id="portfolio" class="portfolio">
+          <h2>Portfolio</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project 1"
+              />
+              <div class="portfolio-info">
+                <h3>Branding Project</h3>
+                <p>Modern logo and identity design.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project 2"
+              />
+              <div class="portfolio-info">
+                <h3>UI/UX Design</h3>
+                <p>Mobile app interface design.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project 3"
+              />
+              <div class="portfolio-info">
+                <h3>Marketing Campaign</h3>
+                <p>Creative social media graphics.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="contact-about">
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+          With over 5 years of experience in branding, UI/UX design, and visual
+          storytelling, I bring concepts to life through design. I specialize in
+          creating stunning visuals that connect with audiences and leave
+          lasting impressions.
+        </p>
+      </section>
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Let's collaborate on your next project! Reach out to me below:</p>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
